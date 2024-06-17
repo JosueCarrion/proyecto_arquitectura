@@ -3,7 +3,8 @@
 #include <fstream>
 #define SEPARADOR cout << "\t+----------------------------------------------------+" << endl;
 #define SEPARADORALT cout << "\t+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+" << endl;
-#define CABEZERA cout << "\t|  Iteracion  |  Direccion  |  Bloque  |  Resultado  |" << endl;
+#define CABEZERA cout << "\t|  Iteracion  |  Direccion  |  Bloque  |  Resultado  |" << endl \
+					  << "\t+----------------------------------------------------+" << endl;
 using namespace std;
 
 void correspondenciaDirecta(vector<int> direcciones, int tamanoCache);
@@ -54,7 +55,10 @@ void ShowMenu(int *inicar, int *numeroDeBloques, int *numeroDeConjuntos)
 {
 	cout << endl
 		 << "\t+----------------------- MENU -----------------------+" << endl;
-	cout << "\t| Seleccione el tipo de correspondencia              |                           |" << endl;
+	cout << "\t| Entrada: bitstampUSD_2012-01-01_to_2021-03-31.csv  |" << endl;
+	cout << "\t|          4857379 registros, 310.085 KB             |" << endl;
+	SEPARADOR
+	cout << "\t| Seleccione el tipo de correspondencia              |" << endl;
 	cout << "\t| [1] Correspondencia Directa                        |" << endl;
 	cout << "\t| [2] Correspondencia Asociativa Con Conjuntos       |" << endl;
 	cout << "\t| [3] Correspondencia Completamente Asociativa       |" << endl;
