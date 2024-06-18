@@ -54,9 +54,10 @@ int main()
 void ShowMenu(int *inicar, int *numeroDeBloques, int *numeroDeConjuntos)
 {
 	cout << endl
-		 << "\t+----------------------- MENU -----------------------+" << endl;
-	cout << "\t| Entrada: bitstampUSD_2012-01-01_to_2021-03-31.csv  |" << endl;
-	cout << "\t|          4857379 registros, 310.085 KB             |" << endl;
+		 << "\t+------------------- MENU PARTE I -------------------+" << endl;
+	cout << "\t| Desarrolladores: Josue Carrion 30020470            |" << endl;
+	cout << "\t|                  Gabriel Pinto 26364594            |" << endl;
+	cout << "\t| Entrada: input.txt         5 registros, 1 KB       |" << endl;
 	SEPARADOR
 	cout << "\t| Seleccione el tipo de correspondencia              |" << endl;
 	cout << "\t| [1] Correspondencia Directa                        |" << endl;
